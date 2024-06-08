@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(25, 5, 29);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    margin: 120px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    margin-bottom: 11.5px;
+}
+
+
+#qrText {
+
+    outline: 0;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 3px 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+#btn {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    padding: 3px;
+    margin-top: 10px;
+
+}
+
+#buffer {
+    display: none;
+}
+
+#url {
+    display: none;
+    width: 350px;
+    border: 0;
+    font-size: 15px;
+    outline: 0;
+}
+
+p {
+    display: none;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#qrCode {
+
+    padding: 5px;
+    margin: 20px auto;
+    transition: width 2s;
+    width: 200px;
+    border: 1px solid black;
+   
+    display: none;
+
+
+}
+
+.error {
+    animation: shake 0.2s linear 10;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        max-width: 310px;
+        margin: 60px auto;
+    }
+
+    #url {
+        
+        width: 250px;
+        
+    }
+
+
+
+
+
+}
